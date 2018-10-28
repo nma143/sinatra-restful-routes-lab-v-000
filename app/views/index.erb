@@ -1,9 +1,8 @@
 <h1>Recipes</h1>
-<% binding.pry %>
 <% @recipes.each do |recipe| %>
 <div class="recipe">
   <p> Name: <%= recipe.name %></p>
-  <p> Ingredients: <%= recipe.content %></p>
+  <p> Ingredients: <%= recipe.ingredients %></p>
   <p> Cooking Time: <%= recipe.cook_time %></p>
 </div>
 <% end %>
