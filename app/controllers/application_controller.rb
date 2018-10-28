@@ -31,7 +31,7 @@ class ApplicationController < Sinatra::Base
     @recipe.ingredients = params[:ingredients]
     @recipe.cook_time = params[:cook_time]
     @recipe.save
-    redirct to 
+    redirct to "/recipes/#{@recipe.id}"
   end
 
   post '/recipes' do
