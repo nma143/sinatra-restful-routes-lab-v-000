@@ -4,6 +4,6 @@
   <p> Name: <%= recipe.name %></p>
   <p> Ingredients: <%= recipe.ingredients %></p>
   <p> Cooking Time: <%= recipe.cook_time %></p>
-  <a href="/recipes/#{<%= recipe.id %>}">Recipe Link</a>
+  <a href="/recipes/<%= recipe.id %>">Recipe Link</a>
 </div>
 <% end %>
